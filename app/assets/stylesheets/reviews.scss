@@ -1,0 +1,58 @@
+// Place all the styles related to the reviews controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.review{
+  width: 500px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 5px 0px 15px 0px;
+  border-radius: 3px;
+}
+
+.review-p {
+  size: 4px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.rating-box {
+  margin-top: 3px;
+}
+
+.ratings {
+  margin-bottom: 3px;
+}
+
+.ratings .fa {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.rating-form {
+  padding-bottom: 10px;
+}
+
+.rathing-value-display {
+  margin-left: 3px;
+  margin-bottom: 10px;
+  
+}
+
+.textarea {
+  width: 300px;
+  height: 100px;
+  
+}
+
+.button {
+  margin-top: 3px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 3px;
+  color: white;
+}
+
+.back {
+  padding: 4px;
+}

@@ -1,0 +1,42 @@
+// Place all the styles related to the lures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.lures{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  
+}
+
+.lure-box {
+  padding: 5%;
+  height: 100px;
+}
+
+.lure-name {
+  background-color: rgb(151, 151, 0);
+  font-size: 20px;
+  width: 300px;
+  border-radius: 3px;
+}
+
+.lures-card {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.lure-img-card {
+  width: 500px; 
+  height: 250px;
+}
+
+.lure-name-card {
+  background-color: rgb(151, 151, 0);
+  font-size: 30px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}

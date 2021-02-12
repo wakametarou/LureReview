@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  min-height: 100vh;
+  background-image: url("./img/home.jpg");
+}
+
+.notice {
+  background-color: rgb(151, 151, 0);
+}
+
+.alert {
+  background-color: red;
+  color: white;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #111111;
+}

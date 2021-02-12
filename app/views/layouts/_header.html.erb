@@ -19,7 +19,7 @@
 
     <div class="item">
       <div class="text">
-        <%=link_to "#", class: "Editlink" do %>
+        <%=link_to user_path(id: current_user[:id]), class: "Editlink" do %>
           <i class="fas fa-user">User</i>
         <% end %>
       </div>

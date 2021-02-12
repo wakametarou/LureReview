@@ -1,0 +1,31 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.user-box {
+  width: 450px;
+  height: 650px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: rgb(151, 151, 0);
+}
+
+.profile-box {
+  text-align: center;
+}
+
+.name-box {
+  margin: 70px;
+}
+
+.email-box {
+  margin: 70px;
+}
+
+.edit-box {
+  margin: 70px;
+}
+
+.destroy-box {
+  margin: 70px;
+}

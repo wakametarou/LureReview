@@ -1,0 +1,23 @@
+<div class="user-box">
+  <div class="profile-box">
+
+    <div class="name-box">
+      <div>名前</div>
+      <div><%= @current_user.name %></div>
+    </div>
+
+    <div class="email-box">
+      <div>E-mail</div>
+      <div><%= @current_user.email %></div>
+    </div>
+
+    <div class="edit-box">
+      <%= link_to '編集する', edit_user_path, class: "edit_btn" %>
+    </div>
+    
+    <div class="destroy-box">
+      <%= link_to '削除をする', "#", class: "text-danger delete_btn", method: :delete, data: { confirm: "アカウントを削除して大丈夫ですか?" } %>
+    </div>
+
+  </div>
+</div>

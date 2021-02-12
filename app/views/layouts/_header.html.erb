@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="nav-header">
+    <a href="/">
+      <div class="text">
+        LureReview
+      </div>
+    </a>
+  </div>
+
+  <div class="item">
+    <div class="text">
+      <%=link_to lures_path, class: "Editlink" do %>
+        <i class="fas fa-fish">Lures</i>
+      <% end %>
+    </div>
+  </div>
+
+  <% if user_signed_in? %>
+
+    <div class="item">
+      <div class="text">
+        <%=link_to "#", class: "Editlink" do %>
+          <i class="fas fa-user">User</i>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="text">
+        <%=link_to destroy_user_session_path, method: :delete, class: "Editlink" do %>
+          <i class="fas fa-sign-out-alt">Logout</i>
+        <% end %>
+      </div>
+    </div>
+
+  <% else %>
+
+    <div class="item">
+      <div class="text">
+        <%=link_to new_user_session_path, class: "Editlink" do %>
+          <i class="fas fa-sign-in-alt">Login</i>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="text">
+        <%=link_to new_user_registration_path, class: "Editlink" do %>
+          <i class="fas fa-user-plus">Sign up</i>
+        <% end %>
+      </div>
+    </div>
+    
+  <% end %>
+
+</div>

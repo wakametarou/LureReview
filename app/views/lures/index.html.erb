@@ -3,7 +3,7 @@
   <% @lures.each do |lure| %>
 
     <div class=lure-box>
-      <%=link_to lure_path(lure.id), class: "Editlink" do %>
+      <%=link_to lure_reviews_path(lure.id), class: "Editlink" do %>
 
         <div class="lure-img">
           <img src="/assets/<%= lure.image %>" alt="" width="300px" height="150px">

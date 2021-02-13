@@ -1,2 +1,57 @@
-<h1>Reviews#index</h1>
-<p>Find me in app/views/reviews/index.html.erb</p>
+<div class="lure-reviews">
+  
+    <div class="lure-card-reviews">
+      <%= render "lures/lure-card" %>
+    </div>
+
+    <div class="all-reviews">
+      <div class="star-box">
+        <div class="star-rating">
+          <div class="star-rating-front" style="width: <%= @lure.review_score_percentage %>%">★★★★★</div>
+          <div class="star-rating-back">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="average-score-display">
+        <%= @lure.avg_score %>点（<%= @lure.reviews.count %>件のレビュー）
+      </div>
+
+      <div class="reviews-content">
+
+        <div class="rite-reviews">
+            <%= link_to "レビューを書く", lure_path(@lure.id) %>
+        </div>
+
+        <div class="back-reviews">
+          <%= link_to "他のレビューを見る", lures_path %>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<div class="">
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>ユーザー</th><th>点数</th><th>内容</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @reviews.each do |review| %>
+        <tr>
+          <td><%= review.user.name %></td>
+          <td><%= review.score %></td>
+          <td><%= review.content %></td>
+        </tr>
+      <% end %>
+    </tbody>
+
+  </table>
+
+</div>

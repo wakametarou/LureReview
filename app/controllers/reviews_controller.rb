@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
   def index
+    @lure = Lure.find(params[:lure_id])
+    @reviews = @lure.reviews
   end
 
   def create

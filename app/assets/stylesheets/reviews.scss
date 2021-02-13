@@ -1,6 +1,33 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.star-box {
+  
+}
+
+.star-rating {
+  position: relative;
+  font-size: 25px;
+  width: 5em;
+  height: 1em;
+}
+
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: black;
+}
+
+.star-rating-back{
+  color: #cccccc;
+}
+
+.average-score-display{
+  
+}
+
 .review{
   width: 500px;
   margin-top: 10px;
@@ -56,4 +83,50 @@
 
 .back {
   padding: 4px;
+}
+
+.lure-reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.lure-card-reviews {
+  width: 500px;
+}
+
+.all-reviews {
+  width: 200px;
+  margin-top: 30px;
+  padding-top: 65px;
+  margin-left: 10px;
+  background-color: rgb(223, 219, 219);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.star-rating {
+  margin-bottom: 20px;
+}
+
+.reviews-content {
+  margin-top: 25px;
+}
+
+.back-reviews {
+  margin-top: 10px;
+}
+
+.raviews-box {
+  text-align: center;
+}
+
+.table {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 710px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding-bottom: 10px;
 }

@@ -1,4 +1,5 @@
 class LuresController < ApplicationController
+  before_action :authenticate_user!, only: [:show]
   def index
     @lures = Lure.all
   end

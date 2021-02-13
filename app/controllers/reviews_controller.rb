@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :create]
+
   def index
     @lure = Lure.find(params[:lure_id])
     @reviews = @lure.reviews

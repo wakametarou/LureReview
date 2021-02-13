@@ -1,5 +1,17 @@
 <div class="review">
   <p class="review-p">レビューを書く</p>
+
+  <% if review.errors.any? %>
+    <div class="notification is-danger">
+      <h2><%= review.errors.count %>件のエラーがあります。</h2>
+      <ul>
+        <% review.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="rating-box">
 
     <%= form_with model: review, url: lure_reviews_path(lure), local: true do |f| %>
@@ -28,3 +40,5 @@
 
   </div>
 </div>
+
+<%= javascript_include_tag "reviews.js" %>

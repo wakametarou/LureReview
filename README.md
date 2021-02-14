@@ -1,24 +1,62 @@
-# README
+# アプリ名 
+## LureReview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# 概要
+魚釣りの道具ルアー(擬似餌)に関してのレビューアプリ。
+他人のルアーの評価や意見を参考にユーザーの釣果を上げることを目的としたアプリケーション。
 
-* Ruby version
 
-* System dependencies
+# 実装機能 使用技術
 
-* Configuration
+## 実装機能
+・ユーザーサインアップ、サインイン、ログアウト、編集、削除機能
+・ユーザーのログイン状態によるアクセス制限
+・ラインナップされたルアーに対する5つ星評価とコメントによるレビュー機能
+・
 
-* Database creation
+## 使用技術
+・上記機能3つに対して
+  ユーザー関係 gem devise
+  アクセス制限 before_actionメソッド
+  レビュー機能 hidden field
 
-* Database initialization
+・開発環境
+  Ruby - 2.7.2
+  Ruby on Rails - 5.2.4.5
+  Javascript
+  Font Awesome
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# 本番環境
 
-* Deployment instructions
+## デプロイ
+Amazon Web Services Heroku
 
-* ...
+## テストアカウント & ID
+名前 test太郎
+Eメール test@test.com
+パスワード 123456
+
+
+# 制作背景
+釣りにおいてルアーに関する情報は知っているか知らないかで釣果が変わっていきます。
+そんな中同じルアーであっても人それぞれによって使い方はさまざまです。
+このアプリを通して他の釣り人の意見を取り込むことで更なる釣果を得ることを目的としています。
+
+
+# DEMO
+### ** https://lure-review.herokuapp.com/
+
+## ユーザー登録,ログイン
+ログインせずともレビューを見ることはできますが、ログインすることで更に他の機能が使えるのでまずはユーザー登録からしていきます。
+![Uploading スクリーンショット 2021-02-14 19.56.24.png…]()
+
+
+
+
+
+・工夫したポイント						
+
+・課題や今後実装したい機能						
+・DB設計						
